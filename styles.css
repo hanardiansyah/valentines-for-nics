@@ -1146,6 +1146,16 @@ section {
     }
 }
 
+/* Explicitly prevent sticky hover on mobile */
+@media (hover: none) {
+
+    .quiz-option:active,
+    .quiz-option:focus {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 182, 193, 0.3);
+    }
+}
+
 .quiz-option.correct {
     background: #D1FAE5;
     border-color: #10B981;
