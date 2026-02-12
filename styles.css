@@ -1139,9 +1139,11 @@ section {
     color: #fff;
 }
 
-.quiz-option:hover {
-    border-color: #FF6B85;
-    background: rgba(255, 107, 133, 0.2);
+@media (hover: hover) {
+    .quiz-option:hover {
+        border-color: #FF6B85;
+        background: rgba(255, 107, 133, 0.2);
+    }
 }
 
 .quiz-option.correct {
@@ -2042,7 +2044,9 @@ section {
         padding: 36px 24px;
         margin: 0 20px;
     }
-}/* ===== Movie Night Tutorial Section ===== */
+}
+
+/* ===== Movie Night Tutorial Section ===== */
 .movie-tutorial {
     background: linear-gradient(135deg, #FFF0F5 0%, #FFF5F7 100%);
     position: relative;
