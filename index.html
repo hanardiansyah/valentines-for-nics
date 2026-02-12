@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day with Nics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hello, Bb</h1>
+            <p class="hero-subtitle">I made something special just for you...</p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown-container">
+                <p class="countdown-label">Valentine's Day in</p>
+                <div class="countdown-timer" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-unit">days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-unit">hrs</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">0</span>
+                        <span class="countdown-unit">min</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">0</span>
+                        <span class="countdown-unit">sec</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-distance">
+                <div class="map-container">
+                    <div class="location-dot indonesia">
+                        <span class="dot"></span>
+                        <span class="label">me</span>
+                    </div>
+                    <div class="connection-line">
+                        <span class="distance-text">2,800+ km</span>
+                        <div class="heart-pulse">◆</div>
+                    </div>
+                    <div class="location-dot philippines">
+                        <span class="dot"></span>
+                        <span class="label">you</span>
+                    </div>
+                </div>
+            </div>
+            <h2 class="valentines-title">Happy Valentine's Day! 💝</h2>
+            <p class="hero-message">distance means so little when someone means so much 💕</p>
+            <a href="#story" class="scroll-btn">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow">↓</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story" id="story">
+        <div class="container">
+            <h2 class="section-title">How It Started 🚀</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">💫</div>
+                    <div class="timeline-content">
+                        <h3>February 1st, 2026</h3>
+                        <p>the day everything changed... the day i matched with the most beautiful soul. little did i know, this swipe would lead me to you.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">💬</div>
+                    <div class="timeline-content">
+                        <h3>Our First Conversations</h3>
+                        <p>every message from you made my heart skip a beat. your words, your warmth, your energy, everything about you is so captivating.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🌏</div>
+                    <div class="timeline-content">
+                        <h3>Miles Apart, Hearts Together</h3>
+                        <p>we might be far, but you feel so close to my heart. every timezone difference is worth it for you. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">💝</div>
+                    <div class="timeline-content">
+                        <h3>Valentine's Day 2026</h3>
+                        <p>and here we are... my first valentine with you. even if i can't be there physically, my love crosses every ocean to reach you. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zodiac Compatibility Section -->
+    <section class="zodiac" id="zodiac">
+        <div class="container">
+            <h2 class="section-title">Written in the Stars ✨</h2>
+            <p class="section-desc">let's see what the universe says about us</p>
+            
+            <div class="zodiac-card">
+                <div class="zodiac-signs">
+                    <div class="zodiac-sign">
+                        <div class="sign-icon">♎</div>
+                        <div class="sign-name">Libra</div>
+                        <div class="sign-label">me</div>
+                    </div>
+                    <div class="zodiac-heart">💕</div>
+                    <div class="zodiac-sign">
+                        <div class="sign-icon">♑</div>
+                        <div class="sign-name">Capricorn</div>
+                        <div class="sign-label">u</div>
+                    </div>
+                </div>
+                
+                <div class="compatibility-meter">
+                    <div class="meter-label">Compatibility</div>
+                    <div class="meter-bar">
+                        <div class="meter-fill" id="compatibilityFill"></div>
+                    </div>
+                    <div class="meter-percentage" id="compatibilityPercent">0%</div>
+                </div>
+                
+                <div class="compatibility-traits">
+                    <div class="trait">
+                        <span class="trait-emoji">💬</span>
+                        <span class="trait-text">Communication: we talk about everything</span>
+                    </div>
+                    <div class="trait">
+                        <span class="trait-emoji">🤝</span>
+                        <span class="trait-text">Balance: u ground me, i lift u up</span>
+                    </div>
+                    <div class="trait">
+                        <span class="trait-emoji">💪</span>
+                        <span class="trait-text">Growth: we make each other better</span>
+                    </div>
+                    <div class="trait">
+                        <span class="trait-emoji">🔥</span>
+                        <span class="trait-text">Chemistry: off the charts tbh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MBTI Compatibility Section -->
+    <section class="mbti" id="mbti">
+        <div class="container">
+            <h2 class="section-title">The Golden Pair ✨</h2>
+            <p class="section-desc">INTP + INFJ = a match made in heaven</p>
+            
+            <div class="mbti-card">
+                <div class="mbti-pair">
+                    <div class="mbti-type">
+                        <div class="mbti-icon">🧠</div>
+                        <div class="mbti-name">INTP</div>
+                        <div class="mbti-title">The Logician</div>
+                        <div class="mbti-label">me</div>
+                    </div>
+                    <div class="mbti-heart">💕</div>
+                    <div class="mbti-type">
+                        <div class="mbti-icon">🌙</div>
+                        <div class="mbti-name">INFJ</div>
+                        <div class="mbti-title">The Advocate</div>
+                        <div class="mbti-label">u</div>
+                    </div>
+                </div>
+                
+                <div class="mbti-match">
+                    <div class="match-badge">💫 95% Match</div>
+                </div>
+                
+                <div class="mbti-traits">
+                    <div class="mbti-trait">
+                        <span class="trait-emoji">🧩</span>
+                        <span class="trait-text">Your intuition + my logic = unstoppable</span>
+                    </div>
+                    <div class="mbti-trait">
+                        <span class="trait-emoji">💭</span>
+                        <span class="trait-text">Both introverts who understand each other's need for space</span>
+                    </div>
+                    <div class="mbti-trait">
+                        <span class="trait-emoji">🔮</span>
+                        <span class="trait-text">Deep conversations at 1am? that's us</span>
+                    </div>
+                    <div class="mbti-trait">
+                        <span class="trait-emoji">💝</span>
+                        <span class="trait-text">You bring warmth, i bring perspective</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spotify Playlist Section -->
+    <section class="playlist" id="playlist">
+        <div class="container">
+            <h2 class="section-title">Songs That Remind Me of You 🎵</h2>
+            <p class="section-desc">a playlist made with love</p>
+            <div class="playlist-card">
+                <div class="playlist-cover">
+                    <div class="vinyl-record">
+                        <div class="vinyl-center">💕</div>
+                    </div>
+                    <div class="music-notes">
+                        <span>♪</span>
+                        <span>♫</span>
+                        <span>♪</span>
+                    </div>
+                </div>
+                <div class="playlist-info">
+                    <h3>For Nics <3</h3>
+                    <p>every song tells our story</p>
+                    <a href="https://open.spotify.com/playlist/0JMahXMLSWWL1imgmEcKCt?si=4f43834b1e9f4d2c" target="_blank" class="spotify-btn">
+                        <svg class="spotify-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                        </svg>
+                        Listen on Spotify
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games" id="games">
+        <div class="container">
+            <h2 class="section-title">Let's Play! 🎮</h2>
+            <p class="section-desc">some fun games i made for you</p>
+            
+            <!-- Game 1: Catch the Hearts -->
+            <div class="game-card">
+                <h3>💕 Catch My Love</h3>
+                <p>catch as many hearts as you can in 30 seconds!</p>
+                <div class="game-area" id="catchGameArea">
+                    <div class="game-stats">
+                        <span class="score">Score: <span id="catchScore">0</span></span>
+                        <span class="timer">Time: <span id="catchTimer">30</span>s</span>
+                    </div>
+                    <div class="game-board" id="catchBoard"></div>
+                    <button class="game-btn" id="startCatchGame">Start Game</button>
+                </div>
+            </div>
+
+            <!-- Game 2: Love Quiz -->
+            <div class="game-card">
+                <h3>💌 Our Little Quiz</h3>
+                <p>let's see how well you know about us!</p>
+                <div class="quiz-area" id="quizArea">
+                    <div class="quiz-question" id="quizQuestion"></div>
+                    <div class="quiz-options" id="quizOptions"></div>
+                    <div class="quiz-result" id="quizResult"></div>
+                    <button class="game-btn" id="startQuiz">Start Quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Couple Bucket List Section -->
+    <section class="bucket-list" id="bucketList">
+        <div class="container">
+            <h2 class="section-title">Our Bucket List 📋</h2>
+            <p class="section-desc">things we'll do together when the distance is finally zero 💕</p>
+
+            <div class="bucket-progress">
+                <div class="progress-text"><span id="bucketCount">0</span> / <span id="bucketTotal">0</span> dreamed so far</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="bucketFill"></div>
+                </div>
+            </div>
+
+            <div class="bucket-grid" id="bucketGrid">
+                <div class="bucket-item" data-emoji="🍵">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">🍵</span>
+                    <span class="bucket-text">matcha date at a cute café</span>
+                </div>
+                <div class="bucket-item" data-emoji="🌅">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">🌅</span>
+                    <span class="bucket-text">watch the sunrise together</span>
+                </div>
+                <div class="bucket-item" data-emoji="tshirt">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">&#x1F455;</span>
+                    <span class="bucket-text">matching outfits day</span>
+                </div>
+                <div class="bucket-item" data-emoji="🍳">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">🍳</span>
+                    <span class="bucket-text">cook a meal together (without burning anything)</span>
+                </div>
+                <div class="bucket-item" data-emoji="park">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">&#x1F3A0;</span>
+                    <span class="bucket-text">theme park date &amp; hold hands on the ferris wheel</span>
+                </div>
+                <div class="bucket-item" data-emoji="camera">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">📸</span>
+                    <span class="bucket-text">take 100 photos in one day</span>
+                </div>
+                <div class="bucket-item" data-emoji="🛒">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">🛒</span>
+                    <span class="bucket-text">grocery shopping like a married couple</span>
+                </div>
+                <div class="bucket-item" data-emoji="rain">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">&#x2602;</span>
+                    <span class="bucket-text">walk in the rain with one umbrella</span>
+                </div>
+                <div class="bucket-item" data-emoji="🎮">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">🎮</span>
+                    <span class="bucket-text">all-night gaming session</span>
+                </div>
+                <div class="bucket-item" data-emoji="✈️">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">✈️</span>
+                    <span class="bucket-text">airport hug — the one i've been waiting for</span>
+                </div>
+                <div class="bucket-item" data-emoji="🏖️">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">🏖️</span>
+                    <span class="bucket-text">beach trip & build a sandcastle</span>
+                </div>
+                <div class="bucket-item" data-emoji="🤫">
+                    <div class="bucket-check"></div>
+                    <span class="bucket-emoji">🤫</span>
+                    <span class="bucket-text">fall asleep next to each other irl</span>
+                </div>
+            </div>
+
+            <p class="bucket-note">tap to check off the ones you're most excited about! ✨</p>
+        </div>
+    </section>
+
+    <!-- Movie Picker Section -->
+    <section class="movie-picker" id="moviePicker">
+        <div class="container">
+            <h2 class="section-title">Movie Night �</h2>
+            <p class="section-desc">spin the reel and pick a movie for our watch party!</p>
+
+            <div class="movie-picker-card">
+                <!-- Genre Filter -->
+                <div class="genre-filters">
+                    <button class="genre-btn active" data-genre="all">All 🍿</button>
+                    <button class="genre-btn" data-genre="romance">Romance 💕</button>
+                    <button class="genre-btn" data-genre="romcom">RomCom 😂</button>
+                    <button class="genre-btn" data-genre="animated">Animated 🎨</button>
+                </div>
+
+                <!-- Slot Machine Roulette -->
+                <div class="roulette-container">
+                    <div class="roulette-frame">
+                        <div class="roulette-glow"></div>
+                        <div class="roulette-window">
+                            <div class="roulette-strip" id="rouletteStrip">
+                                <div class="roulette-item">🎬 Spin to pick!</div>
+                            </div>
+                        </div>
+                        <div class="roulette-shine"></div>
+                    </div>
+                </div>
+
+                <button class="spin-btn" id="spinMovieBtn">
+                    <span class="spin-icon">🎰</span>
+                    <span>Spin the Reel!</span>
+                </button>
+
+                <!-- Movie Result Card -->
+                <div class="movie-result" id="movieResult">
+                    <div class="movie-poster" id="moviePoster">🎬</div>
+                    <div class="movie-details">
+                        <div class="movie-genre-tag" id="movieGenreTag">Romance</div>
+                        <h3 class="movie-title" id="movieTitle">Your movie will appear here!</h3>
+                        <p class="movie-desc" id="movieDesc">Spin the reel to get a random movie recommendation for your watch party date �</p>
+                        <div class="movie-rating" id="movieRating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="movie-tip">💡 tip: spin together on call and watch whatever we get!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- The Big Question Section -->
+    <section class="question" id="question">
+        <div class="container">
+            <div class="question-box">
+                <div class="sparkles">✨</div>
+                <h2 class="question-title">One More Thing...</h2>
+                <p class="question-text">i have something to ask you po</p>
+                <div class="big-question">
+                    <h1>Would you stay with me, like forever?</h1>
+                </div>
+                <div class="buttons-container">
+                    <button class="yes-btn" id="yesBtn">Yes! 💕</button>
+                    <button class="no-btn" id="noBtn">No 😢</button>
+                </div>
+                <p class="hint-text" id="hintText"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success/Celebration Section (hidden initially) -->
+    <section class="celebration" id="celebration">
+        <div class="confetti-container" id="confettiContainer"></div>
+        <div class="celebration-content">
+            <h1 class="celebration-title">YAAAY!!! 🎉💕🎉</h1>
+            <div class="celebration-hearts">💕💗💖💕💗💖</div>
+            <h2>I KNEW YOU'D SAY YES!</h2>
+            <p class="love-message">
+                you just made me the happiest person in the world bb! 
+                <br><br>
+                even though we're 2,800+ kilometers apart, 
+                my love for you knows no distance. 
+                <br> <br>
+                aku sayang kamu
+            </p>
+            <div class="signature">
+                <p>forever yours,</p>
+                <h3>Han <3</h3>
+            </div>
+            <div class="final-hearts">
+                <span>💕</span><span>💗</span><span>💖</span><span>💝</span><span>💕</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section class="letter" id="letter">
+        <div class="container">
+            <div class="letter-paper">
+                <div class="letter-header">💌 A Letter For You</div>
+                <div class="letter-content" id="letterContent">
+                    <p>heyy babyy,</p>
+                    <p>from the moment we matched on February 1st, i knew there was something special about you. the way you talk - everything about you captivates me.</p>
+                    <p>yes, we're miles apart. yes, there are time differences. yes, sometimes it's hard. but you know what? i wouldn't trade this for anything in the world.</p>
+                    <p>because taking care of u and growing the love, even from afar, is the most beautiful thing that has ever happened to me.</p>
+                    <p>happy valentine's day, bb. i can't wait for the day when the distance between us is just a memory.</p>
+                    <p class="letter-signature">yours,<br>me</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
