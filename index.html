@@ -462,6 +462,66 @@
         </div>
     </section>
 
+    <!-- Open When Letters Section -->
+    <section class="open-when" id="openWhen">
+        <div class="container">
+            <h2 class="section-title">Open When... 💌</h2>
+            <p class="section-desc">some letters for you to open whenever you need them</p>
+            
+            <div class="envelopes-grid">
+                <!-- Letter 1 -->
+                <div class="envelope-card" onclick="openLetter('miss')">
+                    <div class="envelope-icon">🥺</div>
+                    <div class="envelope-title">Open when you miss me</div>
+                </div>
+                
+                <!-- Letter 2 -->
+                <div class="envelope-card" onclick="openLetter('sad')">
+                    <div class="envelope-icon">😢</div>
+                    <div class="envelope-title">Open when you're sad</div>
+                </div>
+
+                <!-- Letter 3 -->
+                <div class="envelope-card" onclick="openLetter('tired')">
+                    <div class="envelope-icon">😴</div>
+                    <div class="envelope-title">Open when you're tired</div>
+                </div>
+
+                <!-- Letter 4 -->
+                <div class="envelope-card" onclick="openLetter('happy')">
+                    <div class="envelope-icon">🥳</div>
+                    <div class="envelope-title">Open when you're happy</div>
+                </div>
+
+                <!-- Letter 5 -->
+                <div class="envelope-card" onclick="openLetter('confused')">
+                    <div class="envelope-icon">😵‍💫</div>
+                    <div class="envelope-title">Open when you feel confused</div>
+                </div>
+
+                <!-- Letter 6 -->
+                <div class="envelope-card" onclick="openLetter('boost')">
+                    <div class="envelope-icon">🚀</div>
+                    <div class="envelope-title">Open when you need a boost</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Letter Modal -->
+        <div class="letter-modal" id="letterModal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeLetter()">&times;</span>
+                <div class="modal-header">
+                    <div class="modal-icon" id="modalIcon">💌</div>
+                    <h3 id="modalTitle">Title</h3>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    Content goes here...
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>

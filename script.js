@@ -613,4 +613,73 @@ document.addEventListener('DOMContentLoaded', () => {
     setupZodiacMeter();
     setupMoviePicker();
     setupBucketList();
+    setupOpenWhen();
 });
+
+// ===== Open When Letters =====
+function setupOpenWhen() {
+    window.openLetter = function (type) {
+        const modal = document.getElementById('letterModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+        const modalIcon = document.getElementById('modalIcon');
+
+        const letters = {
+            'miss': {
+                title: "Open when you miss me...",
+                icon: "🥺",
+                content: "bb, whenever you miss me, just remember that i'm missing you too, probably 10x more.\n\nlook at the moon? i'm looking at it too.\nclose your eyes? i'm right there in your heart.\n\ndistance is just a test to see how far love can travel. and ours? it's traveling miles and miles every single second.\n\ni love you. i'm here. always. 💕"
+            },
+            'sad': {
+                title: "Open when you're sad...",
+                icon: "😢",
+                content: "i hate that i can't be there to hug you right now.\n\nbut please know that your feelings are valid. it's okay to be sad. it's okay to cry.\n\ntake a deep breath for me, okay? \nremember that you are so loved, so strong, and this feeling is only temporary.\n\ni'm sending you the biggest, warmest virtual hug ever. 🫂💖"
+            },
+            'tired': {
+                title: "Open when you're tired...",
+                icon: "😴",
+                content: "you've been working so hard, haven't you?\n\ni'm so proud of you. truly.\n\nbut now... it's time to rest. put your phone down (after reading this!), close your eyes, and let yourself drift off.\n\ni'll be the first thing you see when you check your phone in the morning.\n\nsleep tight, my love. sweet dreams. 🌙💤"
+            },
+            'happy': {
+                title: "Open when you're happy...",
+                icon: "🥳",
+                content: "YAYYY!!! i love seeing you happy! tell me everything!!!\n\nyour happiness is literally my favorite thing in the world. \n\ncelebrate it! soak it in! you deserve every bit of this joy.\n\nwish i was there to high-five (or kiss) you, but for now... THIS VIRTUAL CHEER IS FOR YOU! 🎉✨💖"
+            },
+            'confused': {
+                title: "Open when you feel confused...",
+                icon: "😵‍💫",
+                content: "life gets messy sometimes, doesn't it?\n\nit's okay not to have all the answers right now. it's okay to feel lost.\n\nremember: we don't have to figure everything out today. take it one step at a time.\n\nand hey, you don't have to face the confusion alone. i'm right here. text me, call me. let's untangle it together. 🧶💕"
+            },
+            'boost': {
+                title: "Open when you need a boost...",
+                icon: "🚀",
+                content: "stop right there 🛑\n\ndoubting yourself? NOT ALLOWED.\n\nyou are capable. you are smart. you are beautiful inside and out.\n\nlook at how far you've come! you can handle whatever is in front of you. i believe in you so much it's crazy.\n\nnow go out there and show them (and yourself) what you're made of! 💪😎💖"
+            }
+        };
+
+        const letter = letters[type];
+        if (letter) {
+            modalTitle.textContent = letter.title;
+            modalBody.textContent = letter.content;
+            modalIcon.textContent = letter.icon;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    };
+
+    window.closeLetter = function () {
+        const modal = document.getElementById('letterModal');
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    };
+
+    // Close on outside click
+    const modal = document.getElementById('letterModal');
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeLetter();
+            }
+        });
+    }
+}
